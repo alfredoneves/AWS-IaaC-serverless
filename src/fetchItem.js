@@ -1,9 +1,11 @@
 "use strict";
+// importa a biblioteca da amazon
 const AWS = require("aws-sdk");
 
 const fetchItem = async (event) => {
   //module.exports.fetchItem = async (event) => {
 
+  // instancia o objeto usado no banco de dados
     const dynamodb = new AWS.DynamoDB.DocumentClient();
 
     const {id} = event.pathParameters
