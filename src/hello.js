@@ -1,5 +1,6 @@
 "use strict";
 
+# cria a função assíncrona
 const hello = async (event) => {
 //module.exports.hello = async (event) => {
   return {
@@ -15,7 +16,7 @@ const hello = async (event) => {
   };
 };
 
-
+# exporta a função para o lambda
 module.exports = {
     handler:hello
 }
